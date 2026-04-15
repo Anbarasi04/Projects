@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link  rel="stylesheet" href="index.css">
+      <script src="Script.js"></script>
+      <title>Story Creation Platform</title>
+   </head>
+   <body>
+      <div id="box">
+      <h4>Generate Your Story.Share it with the world.</h4>
+      <hr>
+      <div id="container">
+        <img id="story-cont" src="public\story.png" alt="Story Img">
+        <div id="btnDiv">
+            <button onclick="openCategory()">Generate Story</button>
+        </div></div>
+        <div id="categoryModal" class="modal">
+            <div class="modal-content">
+               <h3>Select Story Type</h3>
+               <button onclick="generateStory('fantasy')">🧙Fantasy</button>
+               <button onclick="generateStory('motivational')">🔥 Motivational</button>
+               <button onclick="generateStory('kids')">🐰 Kids</button>
+               <button id="closeBtn" onclick="closeCategory()">❌</button>
+            </div>
+        </div>
+
+        <div id="storyModal" class="modal">
+             <div class="modal-content">
+               <h3>The Story Awakens</h3>
+               <p style="text-align: center; color: brown; font-weight: bold;" id="storyTitle"></p>
+               <p id="storyText"></p>
+               <button id="copyBtn" onclick="copyStory()">📋</button>
+               <button id="closeBtn" onclick="closeStory()">❌</button>
+             </div>
+        </div>
+        </div>
+   </body>
+</html>
